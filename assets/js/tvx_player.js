@@ -1,7 +1,7 @@
-var INFO = { softwareVersion:"1.00", serialNumber: "", firmwareVersion:"", hardwareVersion:"", modelName:"", sdkVersion:"", ip:"", memFree:"", memTotal:"", w:0, h:0 , internet:"NINCS" };
-var CLIENT_ID = 1;
+var INFO = { softwareVersion:"2.00", serialNumber: "", firmwareVersion:"", hardwareVersion:"", modelName:"", sdkVersion:"", ip:"", memFree:"", memTotal:"", w:0, h:0 , internet:"NINCS" };
+
 var debug = true;
-var DEBUG_SERIAL = ["SKJY1107"];	// a debug módba bevont kijelzők széria száma - emulátor esetén is megy a debug
+var DEBUG_SERIAL = ["SKJY1107"];				// a debug módba bevont kijelzők széria száma - emulátor esetén is megy a debug
 var DEBUG_RELOAD = null;						// DEBUG ciklikus újraindítás az emulátorban (reset helyett praktikusabb)   [másodperc]   ***** null = kikapcsolva  *****
 var INFO_ABLAK = 10;							// az info ablak láthatósági ideje [másodperc]
 var STATUSZ_TRIAL;								// a szerver elérés próbálkozásainak számlálója

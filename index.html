@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+	<meta charset="utf-8" />
+	<title>TVX Player</title>
+	
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/tvx_player.css" />
+	
+	<script src="lib/cordova.webos.js"></script>
+	<script src="lib/configuration.js"></script>
+	<script src="lib/deviceInfo.js"></script>
+	<script src="lib/inputSource.js"></script>
+	<script src="lib/power.js"></script>
+	<script src="lib/signage.js"></script>
+	<script src="lib/sound.js"></script>
+	<script src="lib/storage.js"></script>
+	<script src="lib/video.js"></script>
+	
+	
+	<script src="assets/js/ajax.js"></script>
+	<script src="assets/js/tvx_player.js"></script>
+	<script src="assets/js/rendszer.js"></script>
+	<script src="assets/js/qrcode.min.js"></script>
+	
+</head>
+<body onload="Init()">
+	<kepernyo>
+	</kepernyo>
+	<div id="Info">
+		<div id="info">
+			<span style="color:black;font-weight:bold;background:lightgray;padding:3px 5px;width:initial;">RENDSZERINFORMÁCIÓ</span>
+		</div>
+		<div id="QR">
+		</div>
+	</div>	
+		
+	<div id="download">
+		<div id="download_dots">&nbsp;&nbsp;Letöltés&nbsp;</div>
+		<div id="download_file"></div>
+		<div id="download_progress"><div id="download_progressbar"></div><div id="down_OK"></div></div>
+		<div id="download_percent">0</div><span>&nbsp;%</span>
+	</div>
+	<div id="musorszunet">
+		<img class='logo' src='assets/img/diginstore-feher.png'/><br>
+	</div>
+	<div id="connect_ok">
+		Aktiválja a készüléket !
+		<span id="reg_nr">Regisztrációs kód</span>
+		<code id="reg_qr"></code>
+	</div>
+	<div id="reg_ok">
+		A készülék működésre kész
+	</div>
+	<canvas id="CANVAS"></canvas>
+	<div id="CONSOLE" style="display:none;">
+		<div id="CONSOLE_LOG" style="display:block;"><header></header><p></p></div>
+		<div id="CONSOLE_INFO"><header></header><p></p></div>
+		<div id="CONSOLE_WARNING"><header></header><p></p></div>
+		<div id="CONSOLE_ERROR"><header></header><p></p></div>
+	</div>
+</body>
+</html>
